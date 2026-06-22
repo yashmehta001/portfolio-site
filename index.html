@@ -1,495 +1,733 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Yash Mehta — Full-Stack Engineer</title>
-<meta name="description" content="Backend-leaning full-stack engineer with 5+ years building secure Node.js & Python services on AWS, paired with thoughtful React & Next.js frontends.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<link rel="canonical" href="https://itsyashmehta.com/">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 38'%3E%3Crect width='38' height='38' rx='10' fill='%232E5AE6'/%3E%3Ctext x='19' y='25' font-family='system-ui,sans-serif' font-weight='600' font-size='15' fill='white' text-anchor='middle'%3EYM%3C/text%3E%3C/svg%3E">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Yash Mehta — Full-Stack Engineer">
-<meta property="og:description" content="Backend-leaning full-stack engineer with 5+ years building secure Node.js & Python services on AWS, paired with thoughtful React & Next.js frontends.">
-<meta property="og:url" content="https://itsyashmehta.com/">
-<meta property="og:image" content="https://itsyashmehta.com/assets/og-image.png">
-</head>
-<body>
-<div class="page">
-
-  <!-- NAV -->
-  <header class="site-header">
-    <nav class="site-nav">
-      <a href="#top" class="logo-link">
-        <span class="logo-icon">YM</span>
-        <span class="logo-text">Yash Mehta</span>
-      </a>
-
-      <div id="nav-links">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#experience" class="nav-link">Work</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </div>
-
-      <a href="assets/Yash-Mehta-Resume.pdf" target="_blank" rel="noopener noreferrer" download class="nav-resume">
-        <span aria-hidden="true">&#8595;</span><span>R&eacute;sum&eacute;</span>
-      </a>
-    </nav>
-  </header>
-
-  <div id="top"></div>
-  <main>
-
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-gradient"></div>
-
-      <div class="hero-content">
-        <div class="availability-badge">
-          <span class="availability-dot"></span>
-          Available for freelance &amp; full-time
-        </div>
-
-        <h1 class="hero-title">
-          Hi, I'm Yash &mdash; I build <span class="text-blue">full-stack products</span> that scale and <span class="text-green">feel good to use</span>.
-        </h1>
-
-        <p class="hero-subtitle">
-          A backend-leaning full-stack engineer with 5+ years turning messy problems into clean, fast systems &mdash; secure Node.js &amp; Python services on AWS, paired with thoughtful React &amp; Next.js frontends.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#contact" class="btn-primary">Work with me &rarr;</a>
-          <a href="assets/Yash-Mehta-Resume.pdf" target="_blank" rel="noopener noreferrer" download class="btn-outline">
-            <span aria-hidden="true">&#8595;</span> Download r&eacute;sum&eacute;
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yash Mehta — Full-Stack Engineer</title>
+    <meta
+      name="description"
+      content="Backend-leaning full-stack engineer with 5+ years building secure Node.js & Python services on AWS, paired with thoughtful React & Next.js frontends."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="canonical" href="https://itsyashmehta.com/" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 38'%3E%3Crect width='38' height='38' rx='10' fill='%232E5AE6'/%3E%3Ctext x='19' y='25' font-family='system-ui,sans-serif' font-weight='600' font-size='15' fill='white' text-anchor='middle'%3EYM%3C/text%3E%3C/svg%3E"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Yash Mehta — Full-Stack Engineer" />
+    <meta
+      property="og:description"
+      content="Backend-leaning full-stack engineer with 5+ years building secure Node.js & Python services on AWS, paired with thoughtful React & Next.js frontends."
+    />
+    <meta property="og:url" content="https://itsyashmehta.com/" />
+    <meta
+      property="og:image"
+      content="https://itsyashmehta.com/assets/og-image.png"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <!-- NAV -->
+      <header class="site-header">
+        <nav class="site-nav">
+          <a href="#top" class="logo-link">
+            <span class="logo-icon">YM</span>
+            <span class="logo-text">Yash Mehta</span>
           </a>
 
-          <div class="social-links">
-            <a href="mailto:yashmehta766@gmail.com" aria-label="Email" class="social-icon">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 4h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm.4 2.3 8.6 5.74L20.6 6.3 21 5H3l.4 1.3Z"></path></svg>
-            </a>
-            <a href="https://www.linkedin.com/in/yash-r-mehta/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"></path></svg>
-            </a>
-            <a href="https://github.com/yashmehta001" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.2 3.44 9.61 8.21 11.17.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.38-1.34-1.75-1.34-1.75-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.22 1.84 1.22 1.07 1.81 2.81 1.29 3.5.99.11-.77.42-1.29.76-1.59-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.24-3.17-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.21a11.5 11.5 0 0 1 6 0c2.29-1.53 3.3-1.21 3.3-1.21.66 1.65.24 2.87.12 3.17.77.83 1.24 1.88 1.24 3.17 0 4.53-2.81 5.53-5.49 5.82.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.9 24 17.49 24 12.29 24 5.78 18.63.5 12 .5z"></path></svg>
-            </a>
+          <div id="nav-links">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#experience" class="nav-link">Work</a>
+            <a href="#contact" class="nav-link">Contact</a>
           </div>
-        </div>
-      </div>
 
-      <!-- stat strip -->
-      <div class="stats-grid">
-        <div class="stat-card">
-          <div class="stat-value">5+</div>
-          <div class="stat-label">Years shipping</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-value">90%</div>
-          <div class="stat-label">Latency reduced</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-value">60%</div>
-          <div class="stat-label">Faster hot paths</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-value">1</div>
-          <div class="stat-label">Patent pending</div>
-        </div>
-      </div>
-    </section>
+          <a
+            href="assets/Yash-Mehta-Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download
+            class="nav-resume"
+          >
+            <span aria-hidden="true">&#8595;</span
+            ><span>R&eacute;sum&eacute;</span>
+          </a>
+        </nav>
+      </header>
 
-    <!-- ABOUT -->
-    <section id="about" class="container section-inner">
-      <div class="section-header">
-        <div class="section-number">01 &mdash; About</div>
-        <h2 class="section-title">How I think about software</h2>
-      </div>
+      <div id="top"></div>
+      <main>
+        <!-- HERO -->
+        <section class="hero">
+          <div class="hero-gradient"></div>
 
-      <p class="about-lead">
-        I like building things that are <span class="text-blue">correct and fast</span> on the inside, and <span class="text-green">clear and calm</span> on the outside.
-      </p>
-
-      <div class="about-columns">
-        <p class="about-text">
-          Over five years I've taken multi-tenant SaaS platforms from 0&rarr;1, designed event-driven microservices on AWS, and hardened APIs against real-world VAPT findings. I lead squads, mentor engineers, and run the backend interview loop &mdash; but I'm happiest deep in a system, making it simpler.
-        </p>
-        <p class="about-text">
-          I'm backend-first, but full-stack by choice. I care about the React and Next.js layer just as much, because reliability and a good experience are the same promise from two directions &mdash; and the details on both sides are what make software feel trustworthy.
-        </p>
-      </div>
-
-      <div class="info-grid">
-        <div class="info-card">
-          <div class="info-card-label">DOMAINS</div>
-          <div class="info-card-title">Fintech &middot; IoT &middot; EdTech</div>
-          <p class="info-card-text">Accounting SaaS, real-time navigation, and multi-tenant school-district platforms.</p>
-        </div>
-        <div class="info-card">
-          <div class="info-card-label">BEYOND CODE</div>
-          <div class="info-card-title">Leading &amp; mentoring</div>
-          <p class="info-card-text">Lead a 6-engineer squad, mentor through design reviews, and run the backend interview loop.</p>
-        </div>
-        <div class="info-card">
-          <div class="info-card-label">EDUCATION</div>
-          <div class="info-card-title">MS Computer Science</div>
-          <p class="info-card-text">Woolf University (EU-accredited) &middot; BSc Information Technology, Sikkim Manipal.</p>
-        </div>
-        <div class="principles-card">
-          <div class="info-card-label">HOW I WORK</div>
-          <div class="principles-list">
-            <div class="principle-item"><span class="principle-dot"></span> Simple beats clever</div>
-            <div class="principle-item"><span class="principle-dot"></span> Measure, then optimise</div>
-            <div class="principle-item"><span class="principle-dot"></span> Security first</div>
-            <div class="principle-item"><span class="principle-dot"></span> Ship &amp; iterate</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section id="services" class="section-border">
-      <div class="container section-inner">
-        <div class="section-header">
-          <div class="section-number">02 &mdash; How I can help</div>
-          <h2 class="section-title">Ways to work together</h2>
-        </div>
-
-        <div class="services-grid">
-          <div class="service-card service-card-blue">
-            <div class="service-icon service-icon-blue">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5Z"></path><path d="m3 13 9 5 9-5"></path></svg>
+          <div class="hero-content">
+            <div class="availability-badge">
+              <span class="availability-dot"></span>
+              Available for freelance &amp; full-time
             </div>
-            <h3 class="service-title">Backend &amp; APIs</h3>
-            <p class="service-text">Scalable microservices, clean REST design, DDD, and data models that don't fall over under load.</p>
-          </div>
-          <div class="service-card service-card-green">
-            <div class="service-icon service-icon-green">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 .5-8.97A6 6 0 0 0 6.5 9 4.5 4.5 0 0 0 6 18h11.5Z"></path></svg>
-            </div>
-            <h3 class="service-title">Cloud &amp; DevOps</h3>
-            <p class="service-text">Event-driven AWS (Lambda, SQS, DynamoDB, CDK), CI/CD pipelines, and observability you can trust.</p>
-          </div>
-          <div class="service-card service-card-blue">
-            <div class="service-icon service-icon-blue">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M3 9h18"></path><path d="M7 6.5h.01M10 6.5h.01"></path></svg>
-            </div>
-            <h3 class="service-title">Full-stack delivery</h3>
-            <p class="service-text">React &amp; Next.js frontends wired to robust backends &mdash; end-to-end features, not just endpoints.</p>
-          </div>
-          <div class="service-card service-card-green">
-            <div class="service-icon service-icon-green">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.4 3.2 7.9 8 9 4.8-1.1 8-4.6 8-9V6l-8-3Z"></path><path d="m9 12 2 2 4-4"></path></svg>
-            </div>
-            <h3 class="service-title">Security &amp; hardening</h3>
-            <p class="service-text">OWASP-aligned reviews, rate limiting, auth (JWT/OAuth2/RBAC), and resolving VAPT findings.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section-border">
-      <div class="container section-inner">
-        <div class="section-header">
-          <div class="section-number">03 &mdash; Skills</div>
-          <h2 class="section-title">Full-stack toolkit</h2>
-        </div>
+            <h1 class="hero-title">
+              Hi, I'm Yash &mdash; I build
+              <span class="text-blue">full-stack products</span> that scale and
+              <span class="text-green">feel good to use</span>.
+            </h1>
 
-        <div class="skills-grid">
-          <div class="skill-group skill-group-blue">
-            <div class="skill-group-label skill-group-label-blue">FRONTEND</div>
-            <div class="skill-tags">
-              <span class="skill-tag skill-tag-blue">React</span>
-              <span class="skill-tag skill-tag-blue">Next.js</span>
-              <span class="skill-tag skill-tag-blue">TypeScript</span>
-              <span class="skill-tag skill-tag-blue">Responsive UI</span>
-              <span class="skill-tag skill-tag-blue">Design systems</span>
-              <span class="skill-tag skill-tag-blue">REST / API integration</span>
-              <span class="skill-tag skill-tag-blue">Accessibility</span>
-            </div>
-          </div>
-          <div class="skill-group skill-group-green">
-            <div class="skill-group-label skill-group-label-green">BACKEND &amp; PLATFORM</div>
-            <div class="skill-tags">
-              <span class="skill-tag skill-tag-green">Node.js</span>
-              <span class="skill-tag skill-tag-green">Python</span>
-              <span class="skill-tag skill-tag-green">NestJS</span>
-              <span class="skill-tag skill-tag-green">Express.js</span>
-              <span class="skill-tag skill-tag-green">Chalice</span>
-              <span class="skill-tag skill-tag-green">Microservices</span>
-              <span class="skill-tag skill-tag-green">Event-Driven</span>
-              <span class="skill-tag skill-tag-green">AWS</span>
-            </div>
-          </div>
-          <div class="skill-group skill-group-blue">
-            <div class="skill-group-label skill-group-label-blue">CLOUD &amp; DEVOPS</div>
-            <div class="skill-tags">
-              <span class="skill-tag skill-tag-blue">AWS Lambda</span>
-              <span class="skill-tag skill-tag-blue">SQS</span>
-              <span class="skill-tag skill-tag-blue">ECS</span>
-              <span class="skill-tag skill-tag-blue">CloudWatch</span>
-              <span class="skill-tag skill-tag-blue">Beanstalk</span>
-              <span class="skill-tag skill-tag-blue">CDK</span>
-              <span class="skill-tag skill-tag-blue">Docker</span>
-              <span class="skill-tag skill-tag-blue">Jenkins</span>
-              <span class="skill-tag skill-tag-blue">GitHub Actions</span>
-            </div>
-          </div>
-          <div class="skill-group skill-group-green">
-            <div class="skill-group-label skill-group-label-green">DATABASES</div>
-            <div class="skill-tags">
-              <span class="skill-tag skill-tag-green">PostgreSQL</span>
-              <span class="skill-tag skill-tag-green">MySQL</span>
-              <span class="skill-tag skill-tag-green">MongoDB</span>
-              <span class="skill-tag skill-tag-green">DynamoDB</span>
-              <span class="skill-tag skill-tag-green">Redis</span>
-              <span class="skill-tag skill-tag-green">TypeORM</span>
-              <span class="skill-tag skill-tag-green">Mongoose</span>
-              <span class="skill-tag skill-tag-green">Prisma</span>
-            </div>
-          </div>
-          <div class="skill-group skill-group-blue">
-            <div class="skill-group-label skill-group-label-blue">SECURITY &amp; API</div>
-            <div class="skill-tags">
-              <span class="skill-tag skill-tag-blue">OWASP hardening</span>
-              <span class="skill-tag skill-tag-blue">Rate limiting</span>
-              <span class="skill-tag skill-tag-blue">Helmet.js</span>
-              <span class="skill-tag skill-tag-blue">Joi</span>
-              <span class="skill-tag skill-tag-blue">JWT / OAuth2 / RBAC</span>
-              <span class="skill-tag skill-tag-blue">OpenAPI</span>
-            </div>
-          </div>
-          <div class="skill-group skill-group-green">
-            <div class="skill-group-label skill-group-label-green">TESTING &amp; PRACTICES</div>
-            <div class="skill-tags">
-              <span class="skill-tag skill-tag-green">Jest</span>
-              <span class="skill-tag skill-tag-green">Pytest</span>
-              <span class="skill-tag skill-tag-green">Mocha</span>
-              <span class="skill-tag skill-tag-green">TDD</span>
-              <span class="skill-tag skill-tag-green">DDD</span>
-              <span class="skill-tag skill-tag-green">Clean Architecture</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            <p class="hero-subtitle">
+              A backend-leaning full-stack engineer with 5+ years turning messy
+              problems into clean, fast systems &mdash; secure Node.js &amp;
+              Python services on AWS, paired with thoughtful React &amp; Next.js
+              frontends.
+            </p>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section-border">
-      <div class="container section-inner">
-        <div class="section-header section-header-wide">
-          <div class="section-number">04 &mdash; Experience</div>
-          <h2 class="section-title">Where I've worked</h2>
-        </div>
+            <div class="hero-actions">
+              <a href="#contact" class="btn-primary">Work with me &rarr;</a>
+              <a
+                href="assets/Yash-Mehta-Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+                class="btn-outline"
+              >
+                <span aria-hidden="true">&#8595;</span> Download
+                r&eacute;sum&eacute;
+              </a>
 
-        <div class="companies">
-
-          <!-- NetWeb Software -->
-          <div class="company-card">
-            <div class="company-header">
-              <div class="company-name-row">
-                <h3 class="company-name">NetWeb Software</h3>
-                <span class="promoted-badge">&#8599; Promoted</span>
-              </div>
-              <div class="company-meta">Jul 2024 &mdash; Present &middot; Hyderabad, India</div>
-            </div>
-            <div class="timeline">
-              <div class="role">
-                <span class="timeline-line"></span>
-                <span class="timeline-dot timeline-dot-green"></span>
-                <div class="role-header">
-                  <span class="role-title">Senior Software Engineer</span>
-                  <span class="role-period">Dec 2025 &mdash; Present</span>
-                </div>
-                <div class="role-stack">Python &middot; Chalice &middot; AWS (SQS, Lambda, DynamoDB, CDK) &middot; Pytest</div>
-                <ul class="role-points">
-                  <li class="role-point">
-                    <span class="role-point-dot"></span>
-                    Lead a 6-engineer squad within a 30-engineer team, owning integration microservices end-to-end and delivering a zero-rollback alpha across 5 sprint cycles.
-                  </li>
-                  <li class="role-point">
-                    <span class="role-point-dot"></span>
-                    Built the event-driven integration layer for a multi-tenant school-district platform on SQS + Lambda + DynamoDB, processing 10,000+ record bursts with strict per-tenant isolation.
-                  </li>
-                  <li class="role-point">
-                    <span class="role-point-dot"></span>
-                    Improved backend performance 60% via query refactoring and call batching; drove Pytest coverage past 90% and reviewed 160+ PRs across 3 squads.
-                  </li>
-                </ul>
-              </div>
-              <div class="role">
-                <span class="timeline-line"></span>
-                <span class="timeline-dot timeline-dot-blue"></span>
-                <div class="role-header">
-                  <span class="role-title">Software Engineer</span>
-                  <span class="role-period">Jul 2024 &mdash; Nov 2025</span>
-                </div>
-                <div class="role-stack">Node.js &middot; TypeScript &middot; PostgreSQL &middot; AWS CloudWatch</div>
-                <ul class="role-points">
-                  <li class="role-point">
-                    <span class="role-point-dot"></span>
-                    Architected modular DDD services and standardised contracts across 100+ API endpoints, eliminating cross-team versioning conflicts.
-                  </li>
-                  <li class="role-point">
-                    <span class="role-point-dot"></span>
-                    Hardened APIs with OWASP-aligned controls &mdash; 7 security headers, rate limiting, validation &mdash; and resolved all VAPT-flagged vulnerabilities.
-                  </li>
-                  <li class="role-point">
-                    <span class="role-point-dot"></span>
-                    Built structured CloudWatch log aggregation across microservices, cutting mean-time-to-identify on production incidents.
-                  </li>
-                </ul>
+              <div class="social-links">
+                <a
+                  href="mailto:contact@itsyashmehta.com"
+                  aria-label="Email"
+                  class="social-icon"
+                >
+                  <svg
+                    width="19"
+                    height="19"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3 4h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm.4 2.3 8.6 5.74L20.6 6.3 21 5H3l.4 1.3Z"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/yash-r-mehta/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  class="social-icon"
+                >
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/yashmehta001"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                  class="social-icon"
+                >
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.2 3.44 9.61 8.21 11.17.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.38-1.34-1.75-1.34-1.75-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.22 1.84 1.22 1.07 1.81 2.81 1.29 3.5.99.11-.77.42-1.29.76-1.59-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.24-3.17-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.21a11.5 11.5 0 0 1 6 0c2.29-1.53 3.3-1.21 3.3-1.21.66 1.65.24 2.87.12 3.17.77.83 1.24 1.88 1.24 3.17 0 4.53-2.81 5.53-5.49 5.82.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.9 24 17.49 24 12.29 24 5.78 18.63.5 12 .5z"
+                    ></path>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
 
-          <!-- JKL Infotech -->
-          <div class="company-card">
-            <div class="company-header">
-              <div class="company-name-row">
-                <h3 class="company-name">JKL Infotech</h3>
-              </div>
-              <div class="company-meta">Sep 2023 &mdash; Jun 2024 &middot; Ahmedabad, India</div>
+          <!-- stat strip -->
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-value">5+</div>
+              <div class="stat-label">Years shipping</div>
             </div>
-            <div class="timeline">
-              <div class="role">
-                <span class="timeline-line"></span>
-                <span class="timeline-dot timeline-dot-blue"></span>
-                <div class="role-header">
-                  <span class="role-title">Software Engineer</span>
-                  <span class="role-period">Sep 2023 &mdash; Jun 2024</span>
-                </div>
-                <div class="role-stack">NestJS &middot; TypeScript &middot; PostgreSQL &middot; AWS Lambda &middot; Docker &middot; Jenkins</div>
-                <ul class="role-points">
-                  <li class="role-point">
-                    <span class="role-point-dot"></span>
-                    Built a multi-tenant SaaS accounting platform 0&rarr;1 with database-per-tenant isolation, enabling a successful alpha launch.
-                  </li>
-                  <li class="role-point">
-                    <span class="role-point-dot"></span>
-                    Cut API response time 70% under a TDD microservices architecture while maintaining 90%+ Jest coverage.
-                  </li>
-                  <li class="role-point">
-                    <span class="role-point-dot"></span>
-                    Implemented a JWT/OAuth2/RBAC framework across 16 modules and automated CI/CD with Docker + Jenkins.
-                  </li>
-                </ul>
-              </div>
+            <div class="stat-card">
+              <div class="stat-value">90%</div>
+              <div class="stat-label">Latency reduced</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">60%</div>
+              <div class="stat-label">Faster hot paths</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">1</div>
+              <div class="stat-label">Patent pending</div>
             </div>
           </div>
+        </section>
 
-          <!-- Deepcoder -->
-          <div class="company-card">
-            <div class="company-header">
-              <div class="company-name-row">
-                <h3 class="company-name">Deepcoder</h3>
-              </div>
-              <div class="company-meta">Sep 2022 &mdash; Jul 2023 &middot; Ahmedabad, India</div>
-            </div>
-            <div class="timeline">
-              <div class="role">
-                <span class="timeline-line"></span>
-                <span class="timeline-dot timeline-dot-blue"></span>
-                <div class="role-header">
-                  <span class="role-title">Jr Software Engineer</span>
-                  <span class="role-period">Sep 2022 &mdash; Jul 2023</span>
-                </div>
-                <div class="role-stack">Node.js &middot; NestJS &middot; MongoDB &middot; Redis &middot; Docker</div>
-                <ul class="role-points">
-                  <li class="role-point">
-                    <span class="role-point-dot"></span>
-                    Created a real-time navigation platform serving 370+ test centres with high-availability route-generation APIs.
-                  </li>
-                  <li class="role-point">
-                    <span class="role-point-dot"></span>
-                    Reduced average API response time from 5s to 0.5s (90%) using Redis caching, query optimisation, and pagination.
-                  </li>
-                  <li class="role-point">
-                    <span class="role-point-dot"></span>
-                    Integrated a secure, webhook-driven payment gateway supporting end-to-end booking flows.
-                  </li>
-                </ul>
-              </div>
-            </div>
+        <!-- ABOUT -->
+        <section id="about" class="container section-inner">
+          <div class="section-header">
+            <div class="section-number">01 &mdash; About</div>
+            <h2 class="section-title">How I think about software</h2>
           </div>
 
-          <!-- Arishti Info Labs -->
-          <div class="company-card">
-            <div class="company-header">
-              <div class="company-name-row">
-                <h3 class="company-name">Arishti Info Labs</h3>
-                <span class="promoted-badge">&#8599; Promoted</span>
-              </div>
-              <div class="company-meta">Oct 2020 &mdash; Jul 2022 &middot; Gujarat, India</div>
-            </div>
-            <div class="timeline">
-              <div class="role">
-                <span class="timeline-line"></span>
-                <span class="timeline-dot timeline-dot-green"></span>
-                <div class="role-header">
-                  <span class="role-title">Research Engineer</span>
-                  <span class="role-period">May 2021 &mdash; Jul 2022</span>
-                </div>
-                <div class="role-stack">Node.js &middot; IoT</div>
-                <ul class="role-points">
-                  <li class="role-point">
-                    <span class="role-point-dot"></span>
-                    Co-invented an Over-The-Air update management system for IoT devices on local networks (patent pending).
-                  </li>
-                  <li class="role-point">
-                    <span class="role-point-dot"></span>
-                    Designed secure Node.js REST APIs for authentication, file handling, and multi-device firmware orchestration.
-                  </li>
-                </ul>
-              </div>
-              <div class="role">
-                <span class="timeline-line"></span>
-                <span class="timeline-dot timeline-dot-blue"></span>
-                <div class="role-header">
-                  <span class="role-title">Research Intern</span>
-                  <span class="role-period">Oct 2020 &mdash; Mar 2021</span>
-                </div>
-                <div class="role-stack">Research &middot; IoT Security</div>
-                <ul class="role-points">
-                  <li class="role-point">
-                    <span class="role-point-dot"></span>
-                    Drafted the provisional patent for the OTA update mechanism and researched IoT device security challenges.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- PATENT -->
-    <section id="patent" class="section-border">
-      <div class="container section-inner">
-        <div class="section-number section-number-spaced">05 &mdash; Patent &amp; Publications</div>
-        <div class="patent-card">
-          <div class="patent-badges">
-            <span class="patent-badge">PATENT PENDING</span>
-            <span class="patent-meta">Filed 31 Mar 2021 &middot; Assignee: Arishti Info Labs</span>
-          </div>
-          <h3 class="patent-title">
-            An Update Management System for IoT Devices and Method Thereof
-          </h3>
-          <p class="patent-text">
-            Co-inventor on a patent application for an Over-The-Air (OTA) update management system enabling secure, orchestrated firmware delivery across heterogeneous IoT devices within local networks.
+          <p class="about-lead">
+            I like building things that are
+            <span class="text-blue">correct and fast</span> on the inside, and
+            <span class="text-green">clear and calm</span> on the outside.
           </p>
-        </div>
-      </div>
-    </section>
 
-    <!-- PROJECTS (uncomment when ready)
+          <div class="about-columns">
+            <p class="about-text">
+              Over five years I've taken multi-tenant SaaS platforms from
+              0&rarr;1, designed event-driven microservices on AWS, and hardened
+              APIs against real-world VAPT findings. I lead squads, mentor
+              engineers, and run the backend interview loop &mdash; but I'm
+              happiest deep in a system, making it simpler.
+            </p>
+            <p class="about-text">
+              I'm backend-first, but full-stack by choice. I care about the
+              React and Next.js layer just as much, because reliability and a
+              good experience are the same promise from two directions &mdash;
+              and the details on both sides are what make software feel
+              trustworthy.
+            </p>
+          </div>
+
+          <div class="info-grid">
+            <div class="info-card">
+              <div class="info-card-label">DOMAINS</div>
+              <div class="info-card-title">
+                Fintech &middot; IoT &middot; EdTech
+              </div>
+              <p class="info-card-text">
+                Accounting SaaS, real-time navigation, and multi-tenant
+                school-district platforms.
+              </p>
+            </div>
+            <div class="info-card">
+              <div class="info-card-label">BEYOND CODE</div>
+              <div class="info-card-title">Leading &amp; mentoring</div>
+              <p class="info-card-text">
+                Lead a 6-engineer squad, mentor through design reviews, and run
+                the backend interview loop.
+              </p>
+            </div>
+            <div class="info-card">
+              <div class="info-card-label">EDUCATION</div>
+              <div class="info-card-title">MS Computer Science</div>
+              <p class="info-card-text">
+                Woolf University (EU-accredited) &middot; BSc Information
+                Technology, Sikkim Manipal.
+              </p>
+            </div>
+            <div class="principles-card">
+              <div class="info-card-label">HOW I WORK</div>
+              <div class="principles-list">
+                <div class="principle-item">
+                  <span class="principle-dot"></span> Simple beats clever
+                </div>
+                <div class="principle-item">
+                  <span class="principle-dot"></span> Measure, then optimise
+                </div>
+                <div class="principle-item">
+                  <span class="principle-dot"></span> Security first
+                </div>
+                <div class="principle-item">
+                  <span class="principle-dot"></span> Ship &amp; iterate
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="section-border">
+          <div class="container section-inner">
+            <div class="section-header">
+              <div class="section-number">02 &mdash; How I can help</div>
+              <h2 class="section-title">Ways to work together</h2>
+            </div>
+
+            <div class="services-grid">
+              <div class="service-card service-card-blue">
+                <div class="service-icon service-icon-blue">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m12 3 9 5-9 5-9-5 9-5Z"></path>
+                    <path d="m3 13 9 5 9-5"></path>
+                  </svg>
+                </div>
+                <h3 class="service-title">Backend &amp; APIs</h3>
+                <p class="service-text">
+                  Scalable microservices, clean REST design, DDD, and data
+                  models that don't fall over under load.
+                </p>
+              </div>
+              <div class="service-card service-card-green">
+                <div class="service-icon service-icon-green">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M17.5 19a4.5 4.5 0 0 0 .5-8.97A6 6 0 0 0 6.5 9 4.5 4.5 0 0 0 6 18h11.5Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="service-title">Cloud &amp; DevOps</h3>
+                <p class="service-text">
+                  Event-driven AWS (Lambda, SQS, DynamoDB, CDK), CI/CD
+                  pipelines, and observability you can trust.
+                </p>
+              </div>
+              <div class="service-card service-card-blue">
+                <div class="service-icon service-icon-blue">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+                    <path d="M3 9h18"></path>
+                    <path d="M7 6.5h.01M10 6.5h.01"></path>
+                  </svg>
+                </div>
+                <h3 class="service-title">Full-stack delivery</h3>
+                <p class="service-text">
+                  React &amp; Next.js frontends wired to robust backends &mdash;
+                  end-to-end features, not just endpoints.
+                </p>
+              </div>
+              <div class="service-card service-card-green">
+                <div class="service-icon service-icon-green">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M12 3 4 6v6c0 4.4 3.2 7.9 8 9 4.8-1.1 8-4.6 8-9V6l-8-3Z"
+                    ></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                </div>
+                <h3 class="service-title">Security &amp; hardening</h3>
+                <p class="service-text">
+                  OWASP-aligned reviews, rate limiting, auth (JWT/OAuth2/RBAC),
+                  and resolving VAPT findings.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section-border">
+          <div class="container section-inner">
+            <div class="section-header">
+              <div class="section-number">03 &mdash; Skills</div>
+              <h2 class="section-title">Full-stack toolkit</h2>
+            </div>
+
+            <div class="skills-grid">
+              <div class="skill-group skill-group-blue">
+                <div class="skill-group-label skill-group-label-blue">
+                  FRONTEND
+                </div>
+                <div class="skill-tags">
+                  <span class="skill-tag skill-tag-blue">React</span>
+                  <span class="skill-tag skill-tag-blue">Next.js</span>
+                  <span class="skill-tag skill-tag-blue">TypeScript</span>
+                  <span class="skill-tag skill-tag-blue">Responsive UI</span>
+                  <span class="skill-tag skill-tag-blue">Design systems</span>
+                  <span class="skill-tag skill-tag-blue"
+                    >REST / API integration</span
+                  >
+                  <span class="skill-tag skill-tag-blue">Accessibility</span>
+                </div>
+              </div>
+              <div class="skill-group skill-group-green">
+                <div class="skill-group-label skill-group-label-green">
+                  BACKEND &amp; PLATFORM
+                </div>
+                <div class="skill-tags">
+                  <span class="skill-tag skill-tag-green">Node.js</span>
+                  <span class="skill-tag skill-tag-green">Python</span>
+                  <span class="skill-tag skill-tag-green">NestJS</span>
+                  <span class="skill-tag skill-tag-green">Express.js</span>
+                  <span class="skill-tag skill-tag-green">Chalice</span>
+                  <span class="skill-tag skill-tag-green">Microservices</span>
+                  <span class="skill-tag skill-tag-green">Event-Driven</span>
+                  <span class="skill-tag skill-tag-green">AWS</span>
+                </div>
+              </div>
+              <div class="skill-group skill-group-blue">
+                <div class="skill-group-label skill-group-label-blue">
+                  CLOUD &amp; DEVOPS
+                </div>
+                <div class="skill-tags">
+                  <span class="skill-tag skill-tag-blue">AWS Lambda</span>
+                  <span class="skill-tag skill-tag-blue">SQS</span>
+                  <span class="skill-tag skill-tag-blue">ECS</span>
+                  <span class="skill-tag skill-tag-blue">CloudWatch</span>
+                  <span class="skill-tag skill-tag-blue">Beanstalk</span>
+                  <span class="skill-tag skill-tag-blue">CDK</span>
+                  <span class="skill-tag skill-tag-blue">Docker</span>
+                  <span class="skill-tag skill-tag-blue">Jenkins</span>
+                  <span class="skill-tag skill-tag-blue">GitHub Actions</span>
+                </div>
+              </div>
+              <div class="skill-group skill-group-green">
+                <div class="skill-group-label skill-group-label-green">
+                  DATABASES
+                </div>
+                <div class="skill-tags">
+                  <span class="skill-tag skill-tag-green">PostgreSQL</span>
+                  <span class="skill-tag skill-tag-green">MySQL</span>
+                  <span class="skill-tag skill-tag-green">MongoDB</span>
+                  <span class="skill-tag skill-tag-green">DynamoDB</span>
+                  <span class="skill-tag skill-tag-green">Redis</span>
+                  <span class="skill-tag skill-tag-green">TypeORM</span>
+                  <span class="skill-tag skill-tag-green">Mongoose</span>
+                  <span class="skill-tag skill-tag-green">Prisma</span>
+                </div>
+              </div>
+              <div class="skill-group skill-group-blue">
+                <div class="skill-group-label skill-group-label-blue">
+                  SECURITY &amp; API
+                </div>
+                <div class="skill-tags">
+                  <span class="skill-tag skill-tag-blue">OWASP hardening</span>
+                  <span class="skill-tag skill-tag-blue">Rate limiting</span>
+                  <span class="skill-tag skill-tag-blue">Helmet.js</span>
+                  <span class="skill-tag skill-tag-blue">Joi</span>
+                  <span class="skill-tag skill-tag-blue"
+                    >JWT / OAuth2 / RBAC</span
+                  >
+                  <span class="skill-tag skill-tag-blue">OpenAPI</span>
+                </div>
+              </div>
+              <div class="skill-group skill-group-green">
+                <div class="skill-group-label skill-group-label-green">
+                  TESTING &amp; PRACTICES
+                </div>
+                <div class="skill-tags">
+                  <span class="skill-tag skill-tag-green">Jest</span>
+                  <span class="skill-tag skill-tag-green">Pytest</span>
+                  <span class="skill-tag skill-tag-green">Mocha</span>
+                  <span class="skill-tag skill-tag-green">TDD</span>
+                  <span class="skill-tag skill-tag-green">DDD</span>
+                  <span class="skill-tag skill-tag-green"
+                    >Clean Architecture</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="section-border">
+          <div class="container section-inner">
+            <div class="section-header section-header-wide">
+              <div class="section-number">04 &mdash; Experience</div>
+              <h2 class="section-title">Where I've worked</h2>
+            </div>
+
+            <div class="companies">
+              <!-- NetWeb Software -->
+              <div class="company-card">
+                <div class="company-header">
+                  <div class="company-name-row">
+                    <h3 class="company-name">NetWeb Software</h3>
+                    <span class="promoted-badge">&#8599; Promoted</span>
+                  </div>
+                  <div class="company-meta">
+                    Jul 2024 &mdash; Present &middot; Hyderabad, India
+                  </div>
+                </div>
+                <div class="timeline">
+                  <div class="role">
+                    <span class="timeline-line"></span>
+                    <span class="timeline-dot timeline-dot-green"></span>
+                    <div class="role-header">
+                      <span class="role-title">Senior Software Engineer</span>
+                      <span class="role-period">Dec 2025 &mdash; Present</span>
+                    </div>
+                    <div class="role-stack">
+                      Python &middot; Chalice &middot; AWS (SQS, Lambda,
+                      DynamoDB, CDK) &middot; Pytest
+                    </div>
+                    <ul class="role-points">
+                      <li class="role-point">
+                        <span class="role-point-dot"></span>
+                        Lead a 6-engineer squad within a 30-engineer team,
+                        owning integration microservices end-to-end and
+                        delivering a zero-rollback alpha across 5 sprint cycles.
+                      </li>
+                      <li class="role-point">
+                        <span class="role-point-dot"></span>
+                        Built the event-driven integration layer for a
+                        multi-tenant school-district platform on SQS + Lambda +
+                        DynamoDB, processing 10,000+ record bursts with strict
+                        per-tenant isolation.
+                      </li>
+                      <li class="role-point">
+                        <span class="role-point-dot"></span>
+                        Improved backend performance 60% via query refactoring
+                        and call batching; drove Pytest coverage past 90% and
+                        reviewed 160+ PRs across 3 squads.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="role">
+                    <span class="timeline-line"></span>
+                    <span class="timeline-dot timeline-dot-blue"></span>
+                    <div class="role-header">
+                      <span class="role-title">Software Engineer</span>
+                      <span class="role-period">Jul 2024 &mdash; Nov 2025</span>
+                    </div>
+                    <div class="role-stack">
+                      Node.js &middot; TypeScript &middot; PostgreSQL &middot;
+                      AWS CloudWatch
+                    </div>
+                    <ul class="role-points">
+                      <li class="role-point">
+                        <span class="role-point-dot"></span>
+                        Architected modular DDD services and standardised
+                        contracts across 100+ API endpoints, eliminating
+                        cross-team versioning conflicts.
+                      </li>
+                      <li class="role-point">
+                        <span class="role-point-dot"></span>
+                        Hardened APIs with OWASP-aligned controls &mdash; 7
+                        security headers, rate limiting, validation &mdash; and
+                        resolved all VAPT-flagged vulnerabilities.
+                      </li>
+                      <li class="role-point">
+                        <span class="role-point-dot"></span>
+                        Built structured CloudWatch log aggregation across
+                        microservices, cutting mean-time-to-identify on
+                        production incidents.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- JKL Infotech -->
+              <div class="company-card">
+                <div class="company-header">
+                  <div class="company-name-row">
+                    <h3 class="company-name">JKL Infotech</h3>
+                  </div>
+                  <div class="company-meta">
+                    Sep 2023 &mdash; Jun 2024 &middot; Ahmedabad, India
+                  </div>
+                </div>
+                <div class="timeline">
+                  <div class="role">
+                    <span class="timeline-line"></span>
+                    <span class="timeline-dot timeline-dot-blue"></span>
+                    <div class="role-header">
+                      <span class="role-title">Software Engineer</span>
+                      <span class="role-period">Sep 2023 &mdash; Jun 2024</span>
+                    </div>
+                    <div class="role-stack">
+                      NestJS &middot; TypeScript &middot; PostgreSQL &middot;
+                      AWS Lambda &middot; Docker &middot; Jenkins
+                    </div>
+                    <ul class="role-points">
+                      <li class="role-point">
+                        <span class="role-point-dot"></span>
+                        Built a multi-tenant SaaS accounting platform 0&rarr;1
+                        with database-per-tenant isolation, enabling a
+                        successful alpha launch.
+                      </li>
+                      <li class="role-point">
+                        <span class="role-point-dot"></span>
+                        Cut API response time 70% under a TDD microservices
+                        architecture while maintaining 90%+ Jest coverage.
+                      </li>
+                      <li class="role-point">
+                        <span class="role-point-dot"></span>
+                        Implemented a JWT/OAuth2/RBAC framework across 16
+                        modules and automated CI/CD with Docker + Jenkins.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Deepcoder -->
+              <div class="company-card">
+                <div class="company-header">
+                  <div class="company-name-row">
+                    <h3 class="company-name">Deepcoder</h3>
+                  </div>
+                  <div class="company-meta">
+                    Sep 2022 &mdash; Jul 2023 &middot; Ahmedabad, India
+                  </div>
+                </div>
+                <div class="timeline">
+                  <div class="role">
+                    <span class="timeline-line"></span>
+                    <span class="timeline-dot timeline-dot-blue"></span>
+                    <div class="role-header">
+                      <span class="role-title">Jr Software Engineer</span>
+                      <span class="role-period">Sep 2022 &mdash; Jul 2023</span>
+                    </div>
+                    <div class="role-stack">
+                      Node.js &middot; NestJS &middot; MongoDB &middot; Redis
+                      &middot; Docker
+                    </div>
+                    <ul class="role-points">
+                      <li class="role-point">
+                        <span class="role-point-dot"></span>
+                        Created a real-time navigation platform serving 370+
+                        test centres with high-availability route-generation
+                        APIs.
+                      </li>
+                      <li class="role-point">
+                        <span class="role-point-dot"></span>
+                        Reduced average API response time from 5s to 0.5s (90%)
+                        using Redis caching, query optimisation, and pagination.
+                      </li>
+                      <li class="role-point">
+                        <span class="role-point-dot"></span>
+                        Integrated a secure, webhook-driven payment gateway
+                        supporting end-to-end booking flows.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Arishti Info Labs -->
+              <div class="company-card">
+                <div class="company-header">
+                  <div class="company-name-row">
+                    <h3 class="company-name">Arishti Info Labs</h3>
+                    <span class="promoted-badge">&#8599; Promoted</span>
+                  </div>
+                  <div class="company-meta">
+                    Oct 2020 &mdash; Jul 2022 &middot; Gujarat, India
+                  </div>
+                </div>
+                <div class="timeline">
+                  <div class="role">
+                    <span class="timeline-line"></span>
+                    <span class="timeline-dot timeline-dot-green"></span>
+                    <div class="role-header">
+                      <span class="role-title">Research Engineer</span>
+                      <span class="role-period">May 2021 &mdash; Jul 2022</span>
+                    </div>
+                    <div class="role-stack">Node.js &middot; IoT</div>
+                    <ul class="role-points">
+                      <li class="role-point">
+                        <span class="role-point-dot"></span>
+                        Co-invented an Over-The-Air update management system for
+                        IoT devices on local networks (patent pending).
+                      </li>
+                      <li class="role-point">
+                        <span class="role-point-dot"></span>
+                        Designed secure Node.js REST APIs for authentication,
+                        file handling, and multi-device firmware orchestration.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="role">
+                    <span class="timeline-line"></span>
+                    <span class="timeline-dot timeline-dot-blue"></span>
+                    <div class="role-header">
+                      <span class="role-title">Research Intern</span>
+                      <span class="role-period">Oct 2020 &mdash; Mar 2021</span>
+                    </div>
+                    <div class="role-stack">Research &middot; IoT Security</div>
+                    <ul class="role-points">
+                      <li class="role-point">
+                        <span class="role-point-dot"></span>
+                        Drafted the provisional patent for the OTA update
+                        mechanism and researched IoT device security challenges.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PATENT -->
+        <section id="patent" class="section-border">
+          <div class="container section-inner">
+            <div class="section-number section-number-spaced">
+              05 &mdash; Patent &amp; Publications
+            </div>
+            <div class="patent-card">
+              <div class="patent-badges">
+                <span class="patent-badge">PATENT PENDING</span>
+                <span class="patent-meta"
+                  >Filed 31 Mar 2021 &middot; Assignee: Arishti Info Labs</span
+                >
+              </div>
+              <h3 class="patent-title">
+                An Update Management System for IoT Devices and Method Thereof
+              </h3>
+              <p class="patent-text">
+                Co-inventor on a patent application for an Over-The-Air (OTA)
+                update management system enabling secure, orchestrated firmware
+                delivery across heterogeneous IoT devices within local networks.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROJECTS (uncomment when ready)
     <section id="projects" class="section-border">
       <div class="container section-inner">
         <div class="section-header">
@@ -533,44 +771,90 @@
     </section>
     -->
 
-    <!-- CONTACT -->
-    <section id="contact" class="section-border">
-      <div class="container contact-inner">
-        <div class="section-number section-number-tight">06 &mdash; Contact</div>
-        <h2 class="contact-title">
-          Have a project in mind? <span class="text-blue">Let's talk.</span>
-        </h2>
-        <p class="contact-text">
-          Open to freelance, consulting, and full-time roles. Drop me a line &mdash; I usually reply within a day.
-        </p>
+        <!-- CONTACT -->
+        <section id="contact" class="section-border">
+          <div class="container contact-inner">
+            <div class="section-number section-number-tight">
+              06 &mdash; Contact
+            </div>
+            <h2 class="contact-title">
+              Have a project in mind? <span class="text-blue">Let's talk.</span>
+            </h2>
+            <p class="contact-text">
+              Open to freelance, consulting, and full-time roles. Drop me a line
+              &mdash; I usually reply within a day.
+            </p>
 
-        <div class="contact-actions">
-          <a href="mailto:yashmehta766@gmail.com" class="btn-primary">
-            yashmehta766@gmail.com
-          </a>
-          <div class="contact-socials">
-            <a href="https://www.linkedin.com/in/yash-r-mehta/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon social-icon-lg">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"></path></svg>
-            </a>
-            <a href="https://github.com/yashmehta001" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon social-icon-lg">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.2 3.44 9.61 8.21 11.17.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.38-1.34-1.75-1.34-1.75-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.22 1.84 1.22 1.07 1.81 2.81 1.29 3.5.99.11-.77.42-1.29.76-1.59-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.24-3.17-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.21a11.5 11.5 0 0 1 6 0c2.29-1.53 3.3-1.21 3.3-1.21.66 1.65.24 2.87.12 3.17.77.83 1.24 1.88 1.24 3.17 0 4.53-2.81 5.53-5.49 5.82.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.9 24 17.49 24 12.29 24 5.78 18.63.5 12 .5z"></path></svg>
-            </a>
+            <div class="contact-actions">
+              <a href="mailto:contact@itsyashmehta.com" class="btn-primary">
+                contact@itsyashmehta.com
+              </a>
+              <div class="contact-socials">
+                <a
+                  href="https://www.linkedin.com/in/yash-r-mehta/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  class="social-icon social-icon-lg"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/yashmehta001"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                  class="social-icon social-icon-lg"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.2 3.44 9.61 8.21 11.17.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.38-1.34-1.75-1.34-1.75-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.22 1.84 1.22 1.07 1.81 2.81 1.29 3.5.99.11-.77.42-1.29.76-1.59-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.24-3.17-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.21a11.5 11.5 0 0 1 6 0c2.29-1.53 3.3-1.21 3.3-1.21.66 1.65.24 2.87.12 3.17.77.83 1.24 1.88 1.24 3.17 0 4.53-2.81 5.53-5.49 5.82.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.9 24 17.49 24 12.29 24 5.78 18.63.5 12 .5z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="location">
+              Based in Hyderabad, India &middot; working with teams worldwide
+            </div>
           </div>
-        </div>
+        </section>
 
-        <div class="location">Based in Hyderabad, India &middot; working with teams worldwide</div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <div class="footer-copyright">&copy; 2026 Yash Mehta &middot; Built with care</div>
-        <a href="assets/Yash-Mehta-Resume.pdf" target="_blank" rel="noopener noreferrer" download class="footer-resume">Download r&eacute;sum&eacute; <span aria-hidden="true">&#8595;</span></a>
-      </div>
-    </footer>
-
-  </main>
-</div>
-</body>
+        <!-- FOOTER -->
+        <footer class="site-footer">
+          <div class="footer-inner">
+            <div class="footer-copyright">
+              &copy; 2026 Yash Mehta &middot; Built with care
+            </div>
+            <a
+              href="assets/Yash-Mehta-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+              class="footer-resume"
+              >Download r&eacute;sum&eacute;
+              <span aria-hidden="true">&#8595;</span></a
+            >
+          </div>
+        </footer>
+      </main>
+    </div>
+  </body>
 </html>
