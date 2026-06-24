@@ -1,6 +1,6 @@
 /* ===================== RESET & BASE ===================== */
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; overflow-x: hidden; }
 body { margin: 0; background: #F4F6F4; }
 ::selection { background: #2E5AE6; color: #fff; }
 a { text-decoration: none; color: inherit; }
@@ -33,7 +33,6 @@ a { text-decoration: none; color: inherit; }
   color: #1A1C20;
   font-family: 'IBM Plex Sans', system-ui, sans-serif;
   min-height: 100vh;
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
