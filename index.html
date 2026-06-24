@@ -21,6 +21,9 @@
       type="image/svg+xml"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 38'%3E%3Crect width='38' height='38' rx='10' fill='%232E5AE6'/%3E%3Ctext x='19' y='25' font-family='system-ui,sans-serif' font-weight='600' font-size='15' fill='white' text-anchor='middle'%3EYM%3C/text%3E%3C/svg%3E"
     />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Yash Mehta — Full-Stack Engineer" />
     <meta
@@ -113,6 +116,7 @@
     </script>
   </head>
   <body>
+    <a href="#main" class="skip-link">Skip to content</a>
     <div class="page">
       <!-- NAV -->
       <header class="site-header">
@@ -140,11 +144,23 @@
             <span aria-hidden="true">&#8595;</span
             ><span>R&eacute;sum&eacute;</span>
           </a>
+
+          <button
+            type="button"
+            class="nav-toggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="nav-links"
+          >
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+          </button>
         </nav>
       </header>
 
       <div id="top"></div>
-      <main>
+      <main id="main">
         <!-- HERO -->
         <section class="hero">
           <div class="hero-gradient"></div>
@@ -935,5 +951,6 @@
         </footer>
       </main>
     </div>
+    <script src="/script.js" defer></script>
   </body>
 </html>

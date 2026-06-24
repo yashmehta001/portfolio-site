@@ -27,6 +27,23 @@ a { text-decoration: none; color: inherit; }
   border: 0;
 }
 
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+}
+.skip-link:focus {
+  left: 12px;
+  top: 12px;
+  padding: 10px 18px;
+  background: #2E5AE6;
+  color: #fff;
+  border-radius: 999px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+}
+
 /* ===================== LAYOUT ===================== */
 .page {
   background: #F4F6F4;
@@ -57,6 +74,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 .site-nav {
+  position: relative;
   max-width: 1140px;
   margin: 0 auto;
   padding: 15px clamp(20px, 5vw, 44px);
@@ -103,15 +121,55 @@ a { text-decoration: none; color: inherit; }
   letter-spacing: 0.01em;
 }
 
-@media (max-width: 759px) {
-  #nav-links { display: none !important; }
-}
-
 .nav-link {
   color: #61656C;
   transition: color 0.15s;
 }
 .nav-link:hover { color: #1A1C20; }
+
+/* Hamburger toggle — hidden on desktop */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid rgba(20, 24, 30, 0.14);
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+}
+.nav-toggle-bar {
+  width: 18px;
+  height: 2px;
+  background: #1A1C20;
+  border-radius: 2px;
+}
+
+@media (max-width: 759px) {
+  .nav-toggle { display: inline-flex; }
+
+  #nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 8px clamp(20px, 5vw, 44px) 16px;
+    background: rgba(244, 246, 244, 0.97);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(20, 24, 30, 0.07);
+    font-size: 15px;
+    display: none;
+  }
+  #nav-links.is-open { display: flex; }
+  #nav-links .nav-link { padding: 12px 2px; }
+}
 
 .nav-resume {
   display: flex;
@@ -847,3 +905,14 @@ a { text-decoration: none; color: inherit; }
   transition: color 0.15s;
 }
 .footer-resume:hover { color: #2E5AE6; }
+
+/* ===================== REDUCED MOTION ===================== */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hero-gradient { animation: none; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
