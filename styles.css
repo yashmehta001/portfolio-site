@@ -132,6 +132,7 @@ a { text-decoration: none; color: inherit; }
   display: none;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 5px;
   width: 42px;
   height: 42px;
