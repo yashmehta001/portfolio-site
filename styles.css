@@ -248,7 +248,7 @@ a { text-decoration: none; color: inherit; }
   position: relative;
   max-width: 1140px;
   margin: 0 auto;
-  padding: clamp(64px, 11vw, 124px) clamp(20px, 5vw, 44px) clamp(52px, 8vw, 88px);
+  padding: clamp(36px, 6vw, 68px) clamp(20px, 5vw, 44px) clamp(52px, 8vw, 88px);
   overflow: hidden;
 }
 
